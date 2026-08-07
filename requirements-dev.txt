@@ -1,0 +1,2 @@
+# Mirrors pyproject.toml for environments that use requirements files.
+-e .[dev]

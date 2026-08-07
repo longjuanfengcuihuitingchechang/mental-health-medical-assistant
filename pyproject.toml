@@ -1,0 +1,21 @@
+[project]
+name = "mental-health-medical-assistant"
+version = "1.0.0"
+description = "Research prototype for a role-based mental-health medical assistant"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi==0.139.2",
+    "uvicorn==0.51.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "httpx==0.28.1",
+]
+
+[tool.setuptools]
+package-dir = {"" = "backend"}
+
+[tool.setuptools.packages.find]
+where = ["backend"]
+include = ["app*"]

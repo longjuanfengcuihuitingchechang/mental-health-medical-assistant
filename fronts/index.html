@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>心理健康智能医疗助手 - 登录</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="shared/app.css">
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900">
+  <main class="flex min-h-screen items-center justify-center px-4 py-10">
+    <section class="w-full max-w-md rounded-2xl border border-slate-200 bg-white p-8 shadow-lg">
+      <header class="mb-8 text-center">
+        <p class="text-sm font-semibold text-teal-700">心理健康智能医疗助手</p>
+        <h1 class="mt-2 text-3xl font-bold">登录系统</h1>
+        <p class="mt-2 text-sm text-slate-500">请选择身份，并使用账号、手机号或邮箱登录</p>
+      </header>
+      <form id="loginForm" class="space-y-5" novalidate>
+        <div><label for="role" class="mb-2 block text-sm font-semibold">身份类型</label><select id="role" required class="w-full rounded-lg border border-slate-300 px-4 py-3"><option value="patient">患者</option><option value="doctor">医生</option><option value="assistant">医疗助理</option><option value="admin">系统管理员</option></select></div>
+        <div><label for="username" class="mb-2 block text-sm font-semibold">账号 / 手机号 / 邮箱</label><input id="username" required autocomplete="username" class="w-full rounded-lg border border-slate-300 px-4 py-3" placeholder="请输入登录标识"></div>
+        <div><label for="password" class="mb-2 block text-sm font-semibold">密码</label><input id="password" type="password" required autocomplete="current-password" class="w-full rounded-lg border border-slate-300 px-4 py-3" placeholder="请输入密码"></div>
+        <button type="submit" class="w-full rounded-lg bg-teal-700 px-4 py-3 font-semibold text-white hover:bg-teal-800">登录</button>
+      </form>
+      <p class="mt-6 text-center text-sm text-slate-600">还没有账号？ <a class="font-semibold text-teal-700" href="register.html">注册患者或医生账号</a></p>
+    </section>
+  </main>
+  <script src="shared/api.js"></script><script src="shared/auth-pages.js"></script>
+</body>
+</html>
